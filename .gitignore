@@ -1,0 +1,54 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+.env.*
+
+# uv cache (optional but safe)
+.uv/
+uv.lock
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test / coverage
+.coverage
+htmlcov/
+
+# Type checker / lint cache
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# FastAPI specific
+.fastapi/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temp files
+*.tmp
+*.swp
+*.swo

@@ -14,7 +14,7 @@ dist/
 
 # Environment variables
 .env
-.env.*
+
 
 # uv cache (optional but safe)
 .uv/

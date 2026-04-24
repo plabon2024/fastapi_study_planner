@@ -12,7 +12,7 @@ from app.models.user import User
 from app.config.config import getAppConfig
 
 
-router = APIRouter(prefix="/auth", tags=["Auth"])
+router = APIRouter(tags=["Auth"])
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 config = getAppConfig()

@@ -5,15 +5,20 @@ from typing import Optional
 
 class ProgressBase(BaseModel):
     session_id: int
-    completion_time: datetime
 
 
 class ProgressCreate(ProgressBase):
+    completion_time: Optional[datetime] = None
     performance_score: Optional[float] = Field(None, ge=0, le=100)
+
+
+class MarkMissedRequest(BaseModel):
+    session_id: int
 
 
 class ProgressResponse(ProgressBase):
     id: int
+    completion_time: datetime
     performance_score: Optional[float]
 
     class Config:

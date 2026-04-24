@@ -9,7 +9,9 @@ class Progress(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
 
-    session_id: Mapped[int] = mapped_column(ForeignKey("study_sessions.id"), nullable=False)
+    session_id: Mapped[int] = mapped_column(
+        ForeignKey("study_sessions.id"), nullable=False
+    )
 
     completion_time: Mapped[datetime] = mapped_column(DateTime, nullable=False)
     performance_score: Mapped[float] = mapped_column(Float, nullable=True)

@@ -14,6 +14,7 @@ class StudySessionCreate(StudySessionBase):
 
 
 class StudySessionUpdate(BaseModel):
+    subject_id: Optional[int] = None
     date: Optional[datetime] = None
     duration: Optional[int] = Field(None, gt=0)
     status: Optional[str] = None
